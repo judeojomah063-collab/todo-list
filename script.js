@@ -32,3 +32,20 @@ function addTask() {
 
   taskInput.value = "";
 }
+// Default tasks
+const defaultTasks = [
+  "🚀 Deploy portfolio site on GitHub Pages",
+  "📝 Update README with project links",
+  "🎨 Improve CSS design for to-do app",
+  "🐞 Fix bug in delete task feature",
+  "📚 Learn JavaScript ES6+ features",
+  "⚛️ Start learning React basics",
+  "💼 Apply to 3 software engineer jobs",
+  "🔗 Add project links to LinkedIn"
+];
+// Show default tasks when page loads
+window.onload = () => {
+  defaultTasks.forEach(task => {
+    addTask(task);
+  });
+};
